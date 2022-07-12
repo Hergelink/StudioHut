@@ -1,0 +1,352 @@
+main {
+  margin: 1rem auto;
+  width: 95%;
+}
+
+.sections {
+  margin-bottom: 2rem;
+}
+
+.sections h2,
+h3,
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.sections h2 {
+  margin-bottom: 0.3rem;
+}
+
+.sections h3 {
+  margin-bottom: 0.3rem;
+}
+
+.sections p {
+  margin-bottom: 0.5rem;
+}
+
+#sections-container {
+  position: relative;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  height: 500px;
+  margin-top: 1rem;
+}
+
+#sections-container img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%);
+  object-fit: cover;
+}
+
+#sections-container h1 {
+  position: absolute;
+  bottom: 65px;
+  left: 16px;
+  color: rgb(238, 238, 238);
+  font-weight: 700;
+  font-size: 1.4rem;
+  z-index: 1;
+}
+
+#sections-container a {
+  position: absolute;
+  bottom: 24px;
+  left: 16px;
+  z-index: 1;
+  text-decoration: none;
+  color: rgb(33, 36, 39);
+  padding: 0.5rem 2rem;
+  background-color: rgb(238, 238, 238);
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.categories {
+  position: relative;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  height: 250px;
+}
+
+.categories img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(75%);
+  object-fit: cover;
+}
+
+.categories a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  color: rgb(238, 238, 238);
+  font-weight: 700;
+  font-size: 1.4rem;
+  white-space: nowrap;
+  display: block;
+}
+
+.popular-studios {
+  position: relative;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  height: 300px;
+}
+
+.popular-studios img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(75%);
+  object-fit: cover;
+}
+
+.popular-studios a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  font-family: 'League Spartan', sans-serif;
+  color: rgb(238, 238, 238);
+  font-weight: 700;
+  font-size: 3rem;
+  white-space: nowrap;
+}
+
+.h3-pop-studios {
+  margin-top: 0.9rem;
+}
+
+#h3-top-margin {
+  margin-top: 2.5rem;
+}
+
+#sumo {
+  filter: brightness(70%);
+}
+
+#sanat {
+  filter: brightness(50%);
+}
+
+#fua {
+  filter: brightness(60%);
+}
+
+#zios {
+  filter: brightness(70%);
+}
+
+#lighthouse {
+  filter: brightness(80%);
+}
+
+#studio-owners {
+  position: relative;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  height: 500px;
+  margin-top: 3rem;
+}
+
+#studio-owners img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%);
+  object-fit: cover;
+}
+
+#studio-owners h3 {
+  position: absolute;
+  bottom: 130px;
+  left: 16px;
+  color: rgb(238, 238, 238);
+  font-weight: 700;
+  font-size: 1.6rem;
+  z-index: 1;
+}
+
+#studio-owners p {
+  position: absolute;
+  bottom: 75px;
+  left: 16px;
+  color: rgb(238, 238, 238);
+  font-weight: 400;
+  font-size: 1.2rem;
+  z-index: 1;
+}
+
+#studio-owners a {
+  position: absolute;
+  bottom: 30px;
+  left: 16px;
+  z-index: 1;
+  text-decoration: none;
+  color: rgb(33, 36, 39);
+  padding: 0.5rem 2rem;
+  background-color: rgb(238, 238, 238);
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* width: 85%; 1100px */
+
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
+  main {
+    margin: 1rem auto;
+    width: 85%;
+  }
+
+  /* Explore Studios Container */
+
+  #sections-container {
+    margin-top: 2rem;
+    height: 350px;
+  }
+
+  #sections-container h1 {
+    bottom: 65px;
+    font-size: 1.6rem;
+  }
+
+  #sections-container a:hover {
+    background-color: rgb(31, 66, 244);
+    border-radius: 5px;
+    color: rgb(238, 238, 238);
+  }
+
+  /* Categories Container */
+
+  .categories-desktop-view {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+
+  .popular-desktop-view {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+  }
+
+  /* Studio Owners Container */
+
+  #studio-owners {
+    height: 300px;
+  }
+
+  #studio-owners h3 {
+    bottom: 130px;
+  }
+
+  #studio-owners p {
+    bottom: 75px;
+  }
+
+  #studio-owners a {
+    bottom: 25px;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  main {
+    margin: 1rem auto;
+    width: 67rem;
+  }
+
+  /* Explore Studios Container */
+
+  #sections-container {
+    margin-top: 2rem;
+    height: 350px;
+  }
+
+  #sections-container h1 {
+    bottom: 65px;
+    font-size: 1.6rem;
+  }
+
+  #sections-container a:hover {
+    background-color: rgb(31, 66, 244);
+    border-radius: 5px;
+    color: rgb(238, 238, 238);
+  }
+
+  /* Categories Container */
+
+  .categories-desktop-view {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+
+  .popular-desktop-view {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+  }
+
+  /* Popular Studios Container */
+
+
+  .popular-studios a {
+    font-size: 4rem;
+  }
+
+
+
+
+
+
+
+  /* Studio Owners Container */
+
+  #studio-owners {
+    height: 300px;
+  }
+
+  #studio-owners h3 {
+    bottom: 130px;
+  }
+
+  #studio-owners p {
+    bottom: 75px;
+  }
+
+  #studio-owners a {
+    bottom: 25px;
+  }
+}
+
+/* divlerin border shadowlarini daha iyi yap.
+  
+  header bolumu desktop moda gectiginde ustte 
+  hep esit boyutta kalsin math operatoru ile.
+
+  belki kategorilerdeki iki divi daha kare yapabilirsin.
+
+  white-spaceleri duzelt, gorsel olarak guzel dursunlar.
+
+  desktopta studyo sahibi div'inin heightini arttir. 
+
+  responsive footer ekle.
+
+
+  google, youtube gibi sitelerde cok kucuk ekranda browser kuculmuyo arastir, sende yap.
+
+
+*/

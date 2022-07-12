@@ -1,0 +1,262 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(33, 36, 39);
+  background-color: rgb(238, 238, 238);
+}
+
+#header-container {
+  margin: 1rem 1rem;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  
+}
+
+#logo-container {
+  width: 33%;
+  text-align: left;
+}
+
+#site-logo {
+  text-decoration: none;
+  list-style: none;
+  color: rgb(33, 36, 39);
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: -0.95px;
+}
+
+.nav-toggle {
+  width: 2.8rem;
+  height: 2.8rem;
+  padding: 0;
+  border: 0;
+  background-color: rgb(238, 238, 238);
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.hamburger {
+  margin: 0.5rem 0;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  display: block;
+  width: 100%;
+  height: 0.1rem;
+  background-color: rgb(33, 36, 39);
+  border-radius: 5px;
+}
+
+/* js ile assagidaki tusu etkin hale getir ??*/
+
+#modal {
+  display: none;
+  position: absolute;
+  background-color: rgb(238, 238, 238);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+#modal-site-logo {
+  text-decoration: none;
+  position: absolute;
+  list-style: none;
+  color: rgb(33, 36, 39);
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  top: 25.5px;
+  left: 16px;
+}
+
+/* acilmis hamburger menusunu carpi yap */
+#menu-status-open {
+  position: absolute;
+  top: 1.1rem;
+  right: 1rem;
+  z-index: 2;
+}
+
+#modal ul {
+  position: absolute;
+  padding: 0;
+  top: 5rem;
+  width: 100%;
+  text-align: center;
+  list-style: none;
+}
+
+#modal li {
+  padding: 1rem 3rem;
+}
+
+#modal li a {
+  text-decoration: none;
+  color: rgb(33, 36, 39);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+#desktop-nav {
+  display: none;
+}
+
+/* footer css */
+
+footer {
+  width: 100%;
+  text-align: center;
+  background-color: rgb(220, 220, 220);
+}
+
+
+footer hr {
+  margin-top: 3rem;
+  border: 0;
+  height: 0;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+
+#first-footer-container {
+  margin: 1rem auto;
+}
+
+.footer-context-container {
+  margin-bottom: 2rem;
+}
+
+#footer-button {
+  text-decoration: none;
+  color: rgb(238, 238, 238);
+  padding: 0.5rem 2rem;
+  background-color: rgb(31, 66, 244);
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+#second-footer-container {
+  margin: 1rem auto;
+}
+
+#second-footer-container img {
+  display: block;
+  margin: 0 auto;
+  height: 4rem;
+}
+
+#second-footer-container p {
+  margin-top: 1rem;
+}
+
+#second-footer-container a {
+  color: rgb(33, 36, 39);
+  margin-bottom: 3rem;
+  text-decoration: none;
+}
+
+#privacy-policy {
+  text-decoration: none;
+  color: rgb(33, 36, 39);
+  padding: 0.5rem 2rem;
+  background-color: rgb(238, 238, 238);
+  border-radius: 5px;
+  display: inline-block;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  margin-top: 1.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  /* Header CSS */
+
+  #header-container {
+    margin: 0 auto;
+    width: 85%;
+  }
+
+  #site-logo {
+    font-size: 2.5rem;
+  }
+  
+  .nav-toggle {
+    display: none;
+  }
+
+  #desktop-nav {
+    display: block;
+  }
+
+  #desktop-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+
+  #desktop-nav li {
+    margin: auto 0.5rem;
+  }
+
+  #desktop-nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    padding: 0.5rem;
+  }
+
+  #desktop-nav a:hover {
+    background-color: rgb(31, 66, 244);
+    border-radius: 5px;
+    color: rgb(238, 238, 238);
+  }
+
+  /* Footer CSS */
+
+  footer span {
+    display: block;
+    background-color: black;
+    height: 0.2rem;
+    width: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  #first-footer-container {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    width: 70%;
+  }
+
+  .footer-context-container {
+    width: 20rem;
+    padding: 0 1rem;
+  }
+
+  #footer-button {
+    white-space: nowrap;
+    padding: 0.4rem 1rem;
+  }
+
+  #second-footer-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+@media only screen and (min-width: 1100px) {
+  #header-container {
+    width: 68rem;
+  }
+}

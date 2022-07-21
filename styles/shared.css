@@ -52,7 +52,6 @@ body {
   border-radius: 5px;
 }
 
-/* js ile assagidaki tusu etkin hale getir ??*/
 
 #modal {
   display: none;
@@ -131,6 +130,7 @@ footer hr {
 
 #first-footer-container {
   margin: 1rem auto;
+  padding: 0.8rem;
 }
 
 .footer-context-container {
@@ -181,13 +181,19 @@ footer hr {
 @media only screen and (min-width: 768px) {
   /* Header CSS */
 
+
   #header-container {
     margin: 0 auto;
     width: 85%;
   }
 
+  #logo-container {
+    padding-top: 0.2rem;
+  }
+
   #site-logo {
     font-size: 2.5rem;
+    /* display: block; */
   }
   
   .nav-toggle {
@@ -221,6 +227,7 @@ footer hr {
     color: rgb(238, 238, 238);
   }
 
+  
   /* Footer CSS */
 
   footer span {

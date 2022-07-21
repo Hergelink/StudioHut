@@ -39,7 +39,7 @@ p {
 #sections-container img {
   width: 100%;
   height: 100%;
-  filter: brightness(50%);
+  filter: brightness(60%);
   object-fit: cover;
 }
 
@@ -91,7 +91,7 @@ p {
   text-decoration: none;
   color: rgb(238, 238, 238);
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   white-space: nowrap;
   display: block;
 }
@@ -121,7 +121,7 @@ p {
   font-family: 'League Spartan', sans-serif;
   color: rgb(238, 238, 238);
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 3.5rem;
   white-space: nowrap;
 }
 
@@ -134,15 +134,15 @@ p {
 }
 
 #sumo {
-  filter: brightness(70%);
+  filter: brightness(80%);
 }
 
 #sanat {
-  filter: brightness(50%);
+  filter: brightness(70%);
 }
 
 #fua {
-  filter: brightness(60%);
+  filter: brightness(70%);
 }
 
 #zios {
@@ -166,7 +166,7 @@ p {
 #studio-owners img {
   width: 100%;
   height: 100%;
-  filter: brightness(50%);
+  filter: brightness(80%);
   object-fit: cover;
 }
 
@@ -203,12 +203,22 @@ p {
   display: inline-block;
 }
 
+
+
 /* width: 85%; 1100px */
 
 @media only screen and (min-width: 768px) and (max-width: 1100px) {
   main {
     margin: 1rem auto;
     width: 85%;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
   }
 
   /* Explore Studios Container */
@@ -220,7 +230,8 @@ p {
 
   #sections-container h1 {
     bottom: 65px;
-    font-size: 1.6rem;
+    /* font-size: 1.6rem; */
+    font-size: 1.8rem;
   }
 
   #sections-container a:hover {
@@ -266,6 +277,14 @@ p {
   main {
     margin: 1rem auto;
     width: 67rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
   }
 
   /* Explore Studios Container */

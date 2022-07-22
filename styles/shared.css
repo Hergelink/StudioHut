@@ -13,7 +13,6 @@ body {
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  
 }
 
 #logo-container {
@@ -51,7 +50,6 @@ body {
   background-color: rgb(33, 36, 39);
   border-radius: 5px;
 }
-
 
 #modal {
   display: none;
@@ -117,7 +115,6 @@ footer {
   background-color: rgb(220, 220, 220);
 }
 
-
 footer hr {
   margin-top: 3rem;
   border: 0;
@@ -125,8 +122,6 @@ footer hr {
   border-top: 2px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
-
-
 
 #first-footer-container {
   margin: 1rem auto;
@@ -181,7 +176,6 @@ footer hr {
 @media only screen and (min-width: 768px) {
   /* Header CSS */
 
-
   #header-container {
     margin: 0 auto;
     width: 85%;
@@ -195,7 +189,7 @@ footer hr {
     font-size: 2.5rem;
     /* display: block; */
   }
-  
+
   .nav-toggle {
     display: none;
   }
@@ -227,7 +221,6 @@ footer hr {
     color: rgb(238, 238, 238);
   }
 
-  
   /* Footer CSS */
 
   footer span {
@@ -260,7 +253,6 @@ footer hr {
     flex-direction: column;
   }
 }
-
 
 @media only screen and (min-width: 1100px) {
   #header-container {

@@ -1,6 +1,6 @@
 main {
     margin: 1rem auto;
-    width: 95%;
+    /* width: 95%; */
     text-align: center;
 }
 
@@ -14,13 +14,185 @@ p {
     margin-bottom: 1rem;
 }
 
-
-
-main div {
-    width: 100%;
+.main-information {
+    width: 95%;
+    margin: 1rem auto;
 }
+
 
 main div img {
     width: 100%;
     border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+
+
+/* SVG ler gelicek */
+.dummy {
+    display: block;
+    margin: 0 auto;
+    width: 4rem;
+    height: 4rem;
+    background-color: black;
+}
+
+/* Subscription Section */
+
+#subscription-section {
+    width: 100%;
+    height: 30rem;
+    background-color: rgba(185,195,255,255);
+    padding-top: 3rem;
+}
+
+#subscription-main-div {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#subscription-context {
+    width: 60%;
+    text-align: left;
+    color: white;   
+    margin: 0 auto;
+}
+
+#subscription-context h3 {
+    margin-block-start: 0;
+    margin-block-end: 0.2rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+#subscription-context p {
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-weight: 600;
+}
+
+#subscription-context ul {
+    list-style: none;
+    padding-inline-start: 0.2rem;
+}
+
+
+@media only screen and (min-width: 768px) {
+    
+body {
+    margin: 0;
+}
+
+
+.main-information {
+    margin: 1rem auto;
+    width: 70%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-left: 0.4rem;
+}
+
+#first-div {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+    
+}
+
+#first-context {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+
+#first-context p {
+    font-size: 1.2rem;
+}
+
+#first-div img {
+    width: 50%;
+}
+
+
+#advantage-context {
+    text-align: left;
+    margin-top: 3rem;
+}
+
+#advantage-context h2 {
+    margin-block-end: 0.2rem;
+    font-size: 1.6rem;
+}
+
+#advantage-context p {
+    font-size: 1.2rem;
+}
+
+
+
+#main-advantage-container {
+    display: flex;
+    
+}
+
+
+.advantage-box {
+    text-align: left;
+    margin-right: 0.4rem;
+   
+}
+
+.advantage-box h4 {
+    margin-block-end: 0.2rem;
+    font-size: 1.2rem;
+}
+
+/* dummy */
+.dummy {
+    margin: 0;
+}
+
+
+/* Subscription Section */
+#subscription-main-div {
+    display: flex;
+    width: 80%;
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1405px) {
+
+.main-information {
+    width: 60%;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+#advantage-context h2 {
+    margin-block-end: 0.2rem;
+    font-size: 1.8rem;
+}
+
+
 }

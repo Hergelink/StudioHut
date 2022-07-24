@@ -1,198 +1,233 @@
 main {
-    margin: 1rem auto;
-    /* width: 95%; */
-    text-align: center;
+  margin: 1rem auto;
+  /* width: 95%; */
+  text-align: center;
 }
 
 h1 {
-    margin-top: 1rem;
-    margin-bottom: 0;
+  margin-top: 1rem;
+  margin-bottom: 0;
 }
 
 p {
-    margin-top: 0;
-    margin-bottom: 1rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 .main-information {
-    width: 95%;
-    margin: 1rem auto;
+  width: 95%;
+  margin: 1rem auto;
 }
-
 
 main div img {
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 
+#main-advantage-container svg {
+  width: 4rem;
+  height: 4rem;
+}
 
+.advantage-box {
+  margin-bottom: 1rem;
+}
 
-/* SVG ler gelicek */
-.dummy {
-    display: block;
-    margin: 0 auto;
-    width: 4rem;
-    height: 4rem;
-    background-color: black;
+.advantage-box h4 {
+  margin-block-start: 0.2rem;
+  margin-block-end: 0.2rem;
+  font-size: 1.2rem;
 }
 
 /* Subscription Section */
 
 #subscription-section {
-    width: 100%;
-    height: 30rem;
-    background-color: rgba(185,195,255,255);
-    padding-top: 3rem;
+  width: 100%;
+  height: 35rem;
+  background-color: rgba(185, 195, 255, 255);
+  padding-top: 3rem;
 }
 
 #subscription-main-div {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
 #subscription-context {
-    width: 60%;
-    text-align: left;
-    color: white;   
-    margin: 0 auto;
+  width: 90%;
+  /* text-align: left; */
+  color: white;
+  margin: 0 auto;
 }
 
 #subscription-context h3 {
-    margin-block-start: 0;
-    margin-block-end: 0.2rem;
-    font-size: 1.8rem;
-    font-weight: 700;
-    white-space: nowrap;
+  margin-block-start: 0;
+  margin-block-end: 0.2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  white-space: nowrap;
 }
 
 #subscription-context p {
-    font-size: 1.4rem;
-    font-weight: 700;
-    font-weight: 600;
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-weight: 600;
 }
 
 #subscription-context ul {
-    list-style: none;
-    padding-inline-start: 0.2rem;
+  list-style: none;
+  padding-inline-start: 0.2rem;
 }
 
+#subscription-context li {
+  margin-bottom: 0.5rem;
+}
+
+#phone-decor {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+}
+
+#phone-decor img {
+  box-shadow: none;
+}
+
+#laptop-decor {
+  display: none;
+}
 
 @media only screen and (min-width: 768px) {
-    
-body {
+  body {
     margin: 0;
-}
+  }
 
-
-.main-information {
+  .main-information {
     margin: 1rem auto;
     width: 70%;
-}
+  }
 
-h1 {
+  h1 {
     font-size: 2.5rem;
     margin-left: 0.4rem;
-}
+  }
 
-#first-div {
+  #first-div {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
     margin-top: 3rem;
-    
-}
+  }
 
-#first-context {
+  #first-context {
     display: flex;
     flex-direction: column;
     margin-left: 2rem;
-}
+  }
 
-#first-context p {
+  #first-context p {
     font-size: 1.2rem;
-}
+  }
 
-#first-div img {
+  #first-div img {
     width: 50%;
-}
+  }
 
-
-#advantage-context {
+  #advantage-context {
     text-align: left;
     margin-top: 3rem;
-}
+  }
 
-#advantage-context h2 {
+  #advantage-context h2 {
     margin-block-end: 0.2rem;
     font-size: 1.6rem;
-}
+  }
 
-#advantage-context p {
+  #advantage-context p {
     font-size: 1.2rem;
-}
+    margin-bottom: 2.2rem;
+  }
 
-
-
-#main-advantage-container {
+  #main-advantage-container {
     display: flex;
-    
-}
+    height: 27rem;
+  }
 
+  .advantage-line {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
 
-.advantage-box {
+  .advantage-box {
     text-align: left;
     margin-right: 0.4rem;
-   
-}
+  }
 
-.advantage-box h4 {
-    margin-block-end: 0.2rem;
-    font-size: 1.2rem;
-}
-
-/* dummy */
-.dummy {
-    margin: 0;
-}
-
-
-/* Subscription Section */
-#subscription-main-div {
+  /* Subscription Section */
+  #subscription-main-div {
     display: flex;
-    width: 80%;
+    flex-direction: row-reverse;
+    width: 60rem;
+    justify-content: space-between;
+  }
+
+  #subscription-context {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: 20rem;
+  }
+
+  #subscription-context h3 {
+    font-size: 2rem;
+  }
+
+  #subscription-context p {
+    font-size: 1.5rem;
+  }
+
+  #subscription-context li {
+    font-size: 1.4rem;
+  }
+
+  #phone-decor {
+    display: none;
+  }
+
+  #laptop-decor {
+    display: block;
+    width: 30rem;
+    height: 30rem;
+  }
+
+  #laptop-decor img {
+    box-shadow: none;
+  }
 }
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
 
 @media only screen and (min-width: 1405px) {
-
-.main-information {
+  .main-information {
     width: 60%;
-}
+  }
 
-h1 {
+  h1 {
     font-size: 3rem;
-}
+  }
 
-#advantage-context h2 {
+  #advantage-context h2 {
     margin-block-end: 0.2rem;
     font-size: 1.8rem;
+  }
 }
 
-
+@media only screen and (min-width: 1975px) {
+  .main-information {
+    width: 50%;
+  }
 }

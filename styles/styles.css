@@ -72,7 +72,7 @@ p {
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
   border-radius: 5px;
   overflow: hidden;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   height: 250px;
 }
 
@@ -310,7 +310,7 @@ p {
   .categories-desktop-view {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
+    grid-gap: 2rem;
   }
 
   .popular-desktop-view {

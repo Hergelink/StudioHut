@@ -19,8 +19,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/styles/shared.css" />
-    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/enroll.css" />
     <script src="/JS/mobile-menu.js" defer></script>
+    <script src="/JS/open-form.js" defer></script>
   </head>
   <body>
     <header>
@@ -64,102 +65,137 @@
       </div>
       <hr />
     </header>
+
     <main>
-      <section class="sections">
-        <div id="sections-container">
-          <h1>Fotoğraf & Müzik Prodüksiyon Stüdyolarını Keşfedin</h1>
-          <a href="" class="section-buttons">Keşfetmeye Başla</a>
-          <img src="/images/main photo.jpg" alt="stüdyo" />
-        </div>
-      </section>
+      <h1>Stüdyo Kayıt Formu</h1>
 
-      <section class="sections">
-        <h2>Kategoriler</h2>
-        <p>
-          Kategori seçiminizi yapın ve tercihlerinize uygun stüdyoları
-          keşfetmeye başlayın.
-        </p>
-        <div class="categories-desktop-view">
-          <div class="categories" id="photo-studios">
-            <img src="/images/photography studio.jpg" alt="fotograf studyosu" />
-            <a href="">Fotoğraf Stüdyoları</a>
-          </div>
-
-          <div class="categories" id="music-studios">
-            <img src="/images/music studio.jpg" alt="muzik studyosu" />
-            <a href="">Muzik Stüdyoları</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="sections">
-        <h2>Popüler Stüdyolar</h2>
-        <p>Platformdaki popüler stüdyolara göz atın.</p>
-        <h3 class="h3-pop-studios">Fotoğraf stüdyoları:</h3>
-
-        <div class="popular-desktop-view">
-          <div class="popular-studios">
-            <img
-              src="/images/popular-studios/sumo.jpg"
-              alt="studyo sumo"
-              id="sumo"
-            />
-            <a href="">Sumo</a>
-          </div>
-
-          <div class="popular-studios">
-            <img
-              src="/images/popular-studios/124.jpg"
-              alt="studyo 124 sanat"
-              id="sanat"
-            />
-            <a href="">124</a>
-          </div>
-
-          <div class="popular-studios">
-            <img
-              src="/images/popular-studios/fua.jpg"
-              alt="studyo fua"
-              id="fua"
-            />
-            <a href="">Fua</a>
-          </div>
+      <section id="enroll-section">
+        <h3>Stüdyo Kategorinizi Seçin</h3>
+        <div id="studio-category-selection">
+          <button id="music-form-selected" class="selection-btn">
+            Müzik Stüdyosu
+          </button>
+          <button id="photography-form-selected" class="selection-btn">
+            Fotoğraf Stüdyosu
+          </button>
         </div>
 
-        <h3 class="h3-pop-studios" id="h3-top-margin">Müzik stüdyoları:</h3>
+      
 
-        <div class="popular-desktop-view">
-          <div class="popular-studios">
-            <img
-              src="/images/popular-studios/zios.jpg"
-              alt="studyo zios"
-              id="zios"
-            />
-            <a href="">Zios</a>
-          </div>
+        <form action="" id="music-form" class="enroll-form">
+          <label for="listing-title">İlan başlığı</label>
+          <input type="text" id="listing-title" maxlength="60" required>
 
-          <div class="popular-studios">
-            <img
-              src="/images/popular-studios/lighthouse.jpg"
-              alt="studyo lighthouse"
-              id="lighthouse"
-            />
-            <a href="">Lighthouse</a>
-          </div>
-        </div>
-      </section>
+          <label for="listing-price">Fiyat</label>
+          <input type="number" id="listing-price" min="50" max="10000" required>
 
-      <section class="sections" id="studio-owners-section">
-        <div id="studio-owners">
-          <h3>Stüdyo sahibi misiniz?</h3>
-          <p>Stüdyonuzu listeleyin, daha geniş bir kitleye ulaşın.</p>
-          <a href="/files/list-your-studio.html" class="section-buttons"
-            >Stüdyonuzu Listeleyin</a
-          >
-          <img src="/images/studio owners.jpg" alt="stüdyo sahipleri" />
-        </div>
+          <button type="submit" id="music-form-submit-btn" class="form-submit-btn">Gönder</button>
+        </form>
+
+
+
+
+        <form action="" id="photography-form" class="enroll-form">
+          <label for="listing-title">İlan başlığı</label>
+          <input type="text" id="listing-title" maxlength="60" required>
+
+          <label for="listing-price">Fiyat</label>
+          <input type="number" id="listing-price" min="50" max="10000" required>
+
+          <label for="listing-details">Ayrıntılı Bilgi</label>
+          <textarea name="Ayrıntılı Bilgi" id="listing-details" cols="30" rows="10"></textarea>
+
+          <label for="phone-number">Telefon Numarası</label>
+          <input type="tel">
+
+          <label for="listing-email">e-mail</label>
+          <input type="email" id="listing-email" required>
+
+          <label for="listing-website">Web Sitesi</label>
+          <input type="url" placeholder="https://www.studyo.com/">
+
+          <label for="">Tavan Yüksekliği</label>
+          <input type="text">
+
+          <label for="">Genişlik</label>
+          <input type="text">
+
+          <label for="">Derinlik</label>
+          <input type="text">
+
+          <label for="">0-1 (Saat)</label>
+          <input type="text">
+
+          <label for="">0-3 (Saat)</label>
+          <input type="text">
+
+          <label for="">0-5 (Saat)</label>
+          <input type="text">
+
+          <p>Fotoğraf Stüdyosu Özellikleri</p>
+
+          <input type="radio" id="" name="studio-features" value="studio-assistant">
+          <label for="studio-assistant">Stüdyo Asistanı</label>
+
+          <input type="radio" id="" name="studio-features" value="backdrop-paper">
+          <label for="backdrop-paper">Renkli Fon Kağıtları</label>
+
+          <input type="radio" id="daylight" name="studio-features" value="daylight">
+          <label for="daylight">Daylight</label>
+
+          <input type="radio" id="blackout" name="studio-features" value="blackout">
+          <label for="blackout">Blackout</label>
+
+          <input type="radio" id="infinity-wall" name="studio-features" value="infinity-wall">
+          <label for="infinity-wall">Sonsuz Fon</label>
+
+          <input type="radio" id="green-screen" name="studio-features" value="green-screen">
+          <label for="green-screen">Green Screen</label>
+
+          <input type="radio" id="car-entry" name="studio-features" value="car-entry">
+          <label for="car-entry">Stüdyo Araç Girişi</label>
+
+          <input type="radio" id="photograpy-camera" name="studio-features" value="photograpy-camera">
+          <label for="photograpy-camera">Fotoğraf makinesi</label>
+
+          <input type="radio" id="medium-format-camera" name="studio-features" value="medium-format-camera">
+          <label for="medium-format-camera">Medium Format Kamera</label>
+
+          <input type="radio" id="video-camera" name="studio-features" value="video-camera">
+          <label for="video-camera">Video Kamera</label>
+
+          <input type="radio" id="lens" name="studio-features" value="lens">
+          <label for="lens">Lensler</label>
+
+          <input type="radio" id="flash" name="studio-features" value="flash">
+          <label for="flash">Flash</label>
+
+          <input type="radio" id="softbox" name="studio-features" value="softbox">
+          <label for="softbox">Softbox</label>
+
+          <input type="radio" id="monitor" name="studio-features" value="monitor">
+          <label for="monitor">Monitör</label>
+
+          <input type="radio" id="transfer-cables" name="studio-features" value="transfer-cables">
+          <label for="transfer-cables">Aktarım Kabloları</label>
+
+          <input type="radio" id="climate-control" name="studio-features" value="climate-control">
+          <label for="climate-control">Klima</label>
+
+          <input type="radio" id="music-system" name="studio-features" value="music-system">
+          <label for="music-system">Ses Sistemleri</label>
+
+          <input type="radio" id="wifi" name="studio-features" value="wifi">
+          <label for="wifi">Wi-Fi</label>
+
+
+
+          <button type="submit" id="photo-form-submit-btn" class="form-submit-btn">Gönder</button>
+        </form>
+
       </section>
     </main>
+
     <footer>
       <hr />
       <div id="first-footer-container">

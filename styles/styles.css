@@ -4,7 +4,8 @@ main {
 }
 
 .sections {
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
+  margin-bottom: 4rem;
 }
 
 .sections h2,

@@ -7,9 +7,6 @@ h1 {
   margin-bottom: 0;
 }
 
-h2 {
-  margin-top: 5.5rem;
-}
 
 p {
   margin-top: 0;
@@ -30,6 +27,11 @@ main div img {
 #main-advantage-container svg {
   width: 4rem;
   height: 4rem;
+}
+
+#advantage-context h2 {
+  margin-top: 5.5rem;
+  margin-bottom: 0.5rem;
 }
 
 #advantage-context p {

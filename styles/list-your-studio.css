@@ -3,8 +3,12 @@ main {
 }
 
 h1 {
-  margin-top: 1rem;
+  margin-top: 3rem;
   margin-bottom: 0;
+}
+
+h2 {
+  margin-top: 5.5rem;
 }
 
 p {
@@ -28,6 +32,10 @@ main div img {
   height: 4rem;
 }
 
+#advantage-context p {
+  margin-bottom: 2.5rem;
+}
+
 .advantage-box {
   margin-bottom: 1rem;
 }
@@ -38,6 +46,10 @@ main div img {
   font-size: 1.2rem;
 }
 
+.advantage-box p {
+  margin-bottom: 1.5rem;
+}
+
 /* Subscription Section */
 
 #subscription-section {
@@ -45,6 +57,7 @@ main div img {
   height: 38rem;
   background-color: rgba(185, 195, 255, 255);
   padding-top: 3rem;
+  margin-top: 6rem;
 }
 
 #subscription-main-div {

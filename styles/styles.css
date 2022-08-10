@@ -127,7 +127,7 @@ p {
 }
 
 .h3-pop-studios {
-  margin-top: 0.9rem;
+  margin-top: 1.2rem;
 }
 
 #h3-top-margin {
@@ -152,6 +152,10 @@ p {
 
 #lighthouse {
   filter: brightness(80%);
+}
+
+#eclectic {
+  filter: brightness(70%);
 }
 
 #studio-owners {

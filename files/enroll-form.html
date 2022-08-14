@@ -80,119 +80,611 @@
           </button>
         </div>
 
-      
-
         <form action="" id="music-form" class="enroll-form">
           <label for="listing-title">İlan başlığı</label>
-          <input type="text" id="listing-title" maxlength="60" required>
+          <input type="text" id="listing-title" maxlength="60" required />
 
           <label for="listing-price">Fiyat</label>
-          <input type="number" id="listing-price" min="50" max="10000" required>
+          <input
+            type="number"
+            id="listing-price"
+            min="50"
+            max="10000"
+            required
+          />
 
-          <button type="submit" id="music-form-submit-btn" class="form-submit-btn">Gönder</button>
+          <button
+            type="submit"
+            id="music-form-submit-btn"
+            class="form-submit-btn"
+          >
+            Gönder
+          </button>
         </form>
-
-
-
 
         <form action="" id="photography-form" class="enroll-form">
-          <label for="listing-title">İlan başlığı</label>
-          <input type="text" id="listing-title" maxlength="60" required>
+          <fieldset>
+            <legend>Stüdyo Bilgileri</legend>
 
-          <label for="listing-price">Fiyat</label>
-          <input type="number" id="listing-price" min="50" max="10000" required>
+            <label for="listing-title">İlan başlığı</label>
+            <input type="text" id="listing-title" maxlength="60" required />
 
-          <label for="listing-details">Ayrıntılı Bilgi</label>
-          <textarea name="Ayrıntılı Bilgi" id="listing-details" cols="30" rows="10"></textarea>
+            <label for="listing-price">Fiyat (₺)</label>
+            <input
+              type="number"
+              id="listing-price"
+              min="50"
+              max="10000"
+              required
+            />
 
-          <label for="phone-number">Telefon Numarası</label>
-          <input type="tel">
+            <label for="listing-details">Ayrıntılı Bilgi</label>
+            <textarea
+              name="Ayrıntılı Bilgi"
+              id="listing-details"
+              cols="30"
+              rows="10"
+            ></textarea>
 
-          <label for="listing-email">e-mail</label>
-          <input type="email" id="listing-email" required>
+            <label for="phone-number">Telefon Numarası</label>
+            <input type="tel" />
 
-          <label for="listing-website">Web Sitesi</label>
-          <input type="url" placeholder="https://www.studyo.com/">
+            <label for="listing-email">e-mail</label>
+            <input type="email" id="listing-email" required />
 
-          <label for="">Tavan Yüksekliği</label>
-          <input type="text">
+            <label for="listing-website">Web Sitesi</label>
+            <input type="url" placeholder="https://www.studyo.com/" />
+          </fieldset>
 
-          <label for="">Genişlik</label>
-          <input type="text">
+          <fieldset>
+            <legend>Stüdyo Ölçüleri</legend>
 
-          <label for="">Derinlik</label>
-          <input type="text">
+            <label for="">Tavan Yüksekliği</label>
+            <input type="text" />
 
-          <label for="">0-1 (Saat)</label>
-          <input type="text">
+            <label for="">Genişlik</label>
+            <input type="text" />
 
-          <label for="">0-3 (Saat)</label>
-          <input type="text">
+            <label for="">Derinlik</label>
+            <input type="text" />
 
-          <label for="">0-5 (Saat)</label>
-          <input type="text">
+            <label for="">0-1 (Saat)</label>
+            <input type="text" />
 
-          <p>Fotoğraf Stüdyosu Özellikleri</p>
+            <label for="">0-3 (Saat)</label>
+            <input type="text" />
 
-          <input type="radio" id="" name="studio-features" value="studio-assistant">
-          <label for="studio-assistant">Stüdyo Asistanı</label>
+            <label for="">0-5 (Saat)</label>
+            <input type="text" />
+          </fieldset>
 
-          <input type="radio" id="" name="studio-features" value="backdrop-paper">
-          <label for="backdrop-paper">Renkli Fon Kağıtları</label>
+          <!-- <p>Fotoğraf Stüdyosu Özellikleri</p> -->
 
-          <input type="radio" id="daylight" name="studio-features" value="daylight">
-          <label for="daylight">Daylight</label>
-
-          <input type="radio" id="blackout" name="studio-features" value="blackout">
-          <label for="blackout">Blackout</label>
-
-          <input type="radio" id="infinity-wall" name="studio-features" value="infinity-wall">
-          <label for="infinity-wall">Sonsuz Fon</label>
-
-          <input type="radio" id="green-screen" name="studio-features" value="green-screen">
-          <label for="green-screen">Green Screen</label>
-
-          <input type="radio" id="car-entry" name="studio-features" value="car-entry">
-          <label for="car-entry">Stüdyo Araç Girişi</label>
-
-          <input type="radio" id="photograpy-camera" name="studio-features" value="photograpy-camera">
-          <label for="photograpy-camera">Fotoğraf makinesi</label>
-
-          <input type="radio" id="medium-format-camera" name="studio-features" value="medium-format-camera">
-          <label for="medium-format-camera">Medium Format Kamera</label>
-
-          <input type="radio" id="video-camera" name="studio-features" value="video-camera">
-          <label for="video-camera">Video Kamera</label>
-
-          <input type="radio" id="lens" name="studio-features" value="lens">
-          <label for="lens">Lensler</label>
-
-          <input type="radio" id="flash" name="studio-features" value="flash">
-          <label for="flash">Flash</label>
-
-          <input type="radio" id="softbox" name="studio-features" value="softbox">
-          <label for="softbox">Softbox</label>
-
-          <input type="radio" id="monitor" name="studio-features" value="monitor">
-          <label for="monitor">Monitör</label>
-
-          <input type="radio" id="transfer-cables" name="studio-features" value="transfer-cables">
-          <label for="transfer-cables">Aktarım Kabloları</label>
-
-          <input type="radio" id="climate-control" name="studio-features" value="climate-control">
-          <label for="climate-control">Klima</label>
-
-          <input type="radio" id="music-system" name="studio-features" value="music-system">
-          <label for="music-system">Ses Sistemleri</label>
-
-          <input type="radio" id="wifi" name="studio-features" value="wifi">
-          <label for="wifi">Wi-Fi</label>
+          <fieldset>
+            <legend>Fotoğraf Stüdyosu Özellikleri</legend>
 
 
+            <div class="fieldset-desktop-view">  
+              <div class="first-part">
+            <div class="align-checkbox-item">
+              <input
+                type="checkbox"
+                id="studio-assistant"
+                name="studio-features"
+                value="studio-assistant"
+                class="checkbox-input"
+              />
+              <label for="studio-assistant" class="checkbox-label">
+                Stüdyo Asistanı</label
+              >
+            </div>
 
-          <button type="submit" id="photo-form-submit-btn" class="form-submit-btn">Gönder</button>
+            <div class="align-checkbox-item">
+              <input
+                type="checkbox"
+                id="backdrop-paper"
+                name="studio-features"
+                value="backdrop-paper"
+                class="checkbox-input"
+              />
+              <label for="backdrop-paper" class="checkbox-label"
+                >Renkli Fon Kağıtları</label
+              >
+            </div>
+
+            <div class="align-checkbox-item">
+              <input
+                type="checkbox"
+                id="daylight"
+                name="studio-features"
+                value="daylight"
+                class="checkbox-input"
+              />
+              <label for="daylight" class="checkbox-label">Daylight</label>
+            </div>
+
+            <div class="align-checkbox-item">
+              <input
+                type="checkbox"
+                id="blackout"
+                name="studio-features"
+                value="blackout"
+                class="checkbox-input"
+              />
+              <label for="blackout" class="checkbox-label">Blackout</label>
+            </div>
+
+            <div class="align-checkbox-item">
+              <input
+                type="checkbox"
+                id="infinity-wall"
+                name="studio-features"
+                value="infinity-wall"
+                class="checkbox-input"
+              />
+              <label for="infinity-wall" class="checkbox-label"
+                >Sonsuz Fon</label
+              >
+            </div>
+
+            <div class="align-checkbox-item">
+              <input
+                type="checkbox"
+                id="green-screen"
+                name="studio-features"
+                value="green-screen"
+                class="checkbox-input"
+              />
+              <label for="green-screen" class="checkbox-label"
+                >Green Screen</label
+              >
+            </div>
+
+            <div class="align-checkbox-item">
+              <input
+                type="checkbox"
+                id="car-entry"
+                name="studio-features"
+                value="car-entry"
+                class="checkbox-input"
+              />
+              <label for="car-entry" class="checkbox-label"
+                >Stüdyo Araç Girişi</label
+              >
+            </div>
+
+            <div class="align-checkbox-item">
+              <input
+                type="checkbox"
+                id="photograpy-camera"
+                name="studio-features"
+                value="photograpy-camera"
+                class="checkbox-input"
+              />
+              <label for="photograpy-camera" class="checkbox-label"
+                >Fotoğraf makinesi</label
+              >
+            </div>
+
+            <div class="align-checkbox-item">
+              <input
+                type="checkbox"
+                id="medium-format-camera"
+                name="studio-features"
+                value="medium-format-camera"
+                class="checkbox-input"
+              />
+              <label for="medium-format-camera" class="checkbox-label"
+                >Medium Format Kamera</label
+              >
+            </div>
+          </div>
+
+
+          <div class="second-part">
+            <div class="align-checkbox-item">
+              <input
+                type="checkbox"
+                id="video-camera"
+                name="studio-features"
+                value="video-camera"
+                class="checkbox-input"
+              />
+              <label for="video-camera" class="checkbox-label"
+                >Video Kamera</label
+              >
+            </div>
+
+            <div class="align-checkbox-item">
+              <input
+                type="checkbox"
+                id="lens"
+                name="studio-features"
+                value="lens"
+                class="checkbox-input"
+              />
+              <label for="lens" class="checkbox-label">Lensler</label>
+            </div>
+
+            <div class="align-checkbox-item">
+              <input
+                type="checkbox"
+                id="flash"
+                name="studio-features"
+                value="flash"
+                class="checkbox-input"
+              />
+              <label for="flash" class="checkbox-label">Flash</label>
+            </div>
+
+            <div class="align-checkbox-item">
+              <input
+                type="checkbox"
+                id="softbox"
+                name="studio-features"
+                value="softbox"
+                class="checkbox-input"
+              />
+              <label for="softbox" class="checkbox-label">Softbox</label>
+            </div>
+
+            <div class="align-checkbox-item">
+              <input
+                type="checkbox"
+                id="monitor"
+                name="studio-features"
+                value="monitor"
+                class="checkbox-input"
+              />
+              <label for="monitor" class="checkbox-label">Monitör</label>
+            </div>
+
+            <div class="align-checkbox-item">
+              <input
+                type="checkbox"
+                id="transfer-cables"
+                name="studio-features"
+                value="transfer-cables"
+                class="checkbox-input"
+              />
+              <label for="transfer-cables" class="checkbox-label"
+                >Aktarım Kabloları</label
+              >
+            </div>
+
+            <div class="align-checkbox-item">
+              <input
+                type="checkbox"
+                id="climate-control"
+                name="studio-features"
+                value="climate-control"
+                class="checkbox-input"
+              />
+              <label for="climate-control" class="checkbox-label">Klima</label>
+            </div>
+            <div class="align-checkbox-item">
+              <input
+                type="checkbox"
+                id="music-system"
+                name="studio-features"
+                value="music-system"
+                class="checkbox-input"
+              />
+              <label for="music-system" class="checkbox-label"
+                >Ses Sistemleri</label
+              >
+            </div>
+            <div class="align-checkbox-item">
+              <input
+                type="checkbox"
+                id="wifi"
+                name="studio-features"
+                value="wifi"
+                class="checkbox-input"
+              />
+              <label for="wifi" class="checkbox-label">Wi-Fi</label>
+            </div>
+          </div>
+          </div>
+          </fieldset>
+
+
+
+
+
+
+
+
+          <fieldset>
+            <legend>Alanlar</legend>
+
+
+            <div class="fieldset-desktop-view">
+              <div class="first-part">
+            <div class="align-checkbox-item">
+              <input
+                type="checkbox"
+                id="changing-room"
+                name="studio-area"
+                value="changing-room"
+                class="checkbox-input"
+              />
+              <label for="changing-room" class="checkbox-label">
+                Kıyafet Odası</label
+              >
+            </div>
+
+            <div class="align-checkbox-item">
+              <input
+                type="checkbox"
+                id="makeup-desk"
+                name="studio-area"
+                value="makeup-desk"
+                class="checkbox-input"
+              />
+              <label for="makeup-desk" class="checkbox-label"
+                >Saç & Makyaj Masası</label
+              >
+            </div>
+
+            <div class="align-checkbox-item">
+              <input
+                type="checkbox"
+                id="makeup-room"
+                name="studio-area"
+                value="makeup-room"
+                class="checkbox-input"
+              />
+              <label for="makeup-room" class="checkbox-label">Saç & Makyaj Odası</label>
+            </div>
+
+            <div class="align-checkbox-item">
+              <input
+                type="checkbox"
+                id="kitchen"
+                name="studio-area"
+                value="kitchen"
+                class="checkbox-input"
+              />
+              <label for="kitchen" class="checkbox-label">Mutfak</label>
+            </div>
+
+            
+            </div>
+
+            <div class="second-part">
+              <div class="align-checkbox-item">
+                <input
+                  type="checkbox"
+                  id="meeting-room"
+                  name="studio-area"
+                  value="meeting-room"
+                  class="checkbox-input"
+                />
+                <label for="meeting-room" class="checkbox-label"
+                  >Toplantı Odası</label
+                >
+              </div>
+
+            <div class="align-checkbox-item">
+              <input
+                type="checkbox"
+                id="parking"
+                name="studio-area"
+                value="parking"
+                class="checkbox-input"
+              />
+              <label for="parking" class="checkbox-label"
+                >Otopark</label
+              >
+            </div>
+
+            <div class="align-checkbox-item">
+              <input
+                type="checkbox"
+                id="toilet"
+                name="studio-area"
+                value="toilet"
+                class="checkbox-input"
+              />
+              <label for="toilet" class="checkbox-label"
+                >Tuvalet</label
+              >
+            </div>
+
+            <div class="align-checkbox-item">
+              <input
+                type="checkbox"
+                id="terrace"
+                name="studio-area"
+                value="terrace"
+                class="checkbox-input"
+              />
+              <label for="terrace" class="checkbox-label"
+                >Teras</label
+              >
+            </div>
+
+          
+
+
+          </div>
+
+        </fieldset>
+
+
+
+
+
+
+        <fieldset>
+          <legend>Çekim Kategorileri</legend>
+
+
+          <div class="fieldset-desktop-view">
+            <div class="first-part">
+          <div class="align-checkbox-item">
+            <input
+              type="checkbox"
+              id="fashion"
+              name="studio-shoot-type"
+              value="fashion"
+              class="checkbox-input"
+            />
+            <label for="fashion" class="checkbox-label">
+              Moda</label
+            >
+          </div>
+
+          <div class="align-checkbox-item">
+            <input
+              type="checkbox"
+              id="product"
+              name="studio-shoot-type"
+              value="product"
+              class="checkbox-input"
+            />
+            <label for="product" class="checkbox-label">
+              Ürün</label
+            >
+          </div>
+
+          <div class="align-checkbox-item">
+            <input
+              type="checkbox"
+              id="event"
+              name="studio-shoot-type"
+              value="event"
+              class="checkbox-input"
+            />
+            <label for="event" class="checkbox-label"
+              >Etkinlik</label
+            >
+          </div>
+
+          <div class="align-checkbox-item">
+            <input
+              type="checkbox"
+              id="food-drinks"
+              name="studio-shoot-type"
+              value="food-drinks"
+              class="checkbox-input"
+            />
+            <label for="food-drinks" class="checkbox-label">Yemek/İçecek</label>
+          </div>
+
+          <div class="align-checkbox-item">
+            <input
+              type="checkbox"
+              id="advertising"
+              name="studio-shoot-type"
+              value="advertising"
+              class="checkbox-input"
+            />
+            <label for="advertising" class="checkbox-label">Reklam</label>
+          </div>
+
+          
+          </div>
+
+          <div class="second-part">
+            <div class="align-checkbox-item">
+              <input
+                type="checkbox"
+                id="portrait"
+                name="studio-shoot-type"
+                value="portrait"
+                class="checkbox-input"
+              />
+              <label for="portrait" class="checkbox-label"
+                >Portre</label
+              >
+            </div>
+
+            <div class="align-checkbox-item">
+              <input
+                type="checkbox"
+                id="architecture"
+                name="studio-shoot-type"
+                value="architecture"
+                class="checkbox-input"
+              />
+              <label for="architecture" class="checkbox-label"
+                >Mimari</label
+              >
+            </div>
+
+          <div class="align-checkbox-item">
+            <input
+              type="checkbox"
+              id="vehicle"
+              name="studio-shoot-type"
+              value="vehicle"
+              class="checkbox-input"
+            />
+            <label for="vehicle" class="checkbox-label"
+              >Araç</label
+            >
+          </div>
+
+          <div class="align-checkbox-item">
+            <input
+              type="checkbox"
+              id="drone"
+              name="studio-shoot-type"
+              value="drone"
+              class="checkbox-input"
+            />
+            <label for="drone" class="checkbox-label"
+              >Drone</label
+            >
+          </div>
+
+          <div class="align-checkbox-item">
+            <input
+              type="checkbox"
+              id="commercial"
+              name="studio-shoot-type"
+              value="commercial"
+              class="checkbox-input"
+            />
+            <label for="commercial" class="checkbox-label"
+              >Kurumsal</label
+            >
+          </div>
+
+        
+
+
+        </div>
+
+      </fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <button
+            type="submit"
+            id="photo-form-submit-btn"
+            class="form-submit-btn"
+          >
+            Gönder
+          </button>
         </form>
-
       </section>
     </main>
 
